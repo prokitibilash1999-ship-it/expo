@@ -15,7 +15,7 @@ const EXPO_SDK_MINIMAL_SUPPORTED_VERSIONS = {
     kotlinVersion: '1.6.10',
   },
   ios: {
-    deploymentTarget: '15.1',
+    deploymentTarget: '16.4',
   },
 };
 
@@ -390,13 +390,13 @@ export interface PluginConfigTypeIos extends SharedBuildConfigFields {
    * [
    *   {
    *     name: "Protobuf",
-   *     version: "~> 3.14.0",
+   *     version: "~> 3.13.4",
    *   }
    * ]
    * ```
    * Will produce the following entry in the generated **ios/Podfile**:
    * ```ruby
-   * pod 'Protobuf', '~> 3.14.0'
+   * pod 'Protobuf', '~> 3.13.4'
    * ```
    */
   extraPods?: ExtraIosPodDependency[];
